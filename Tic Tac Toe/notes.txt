@@ -1,0 +1,13 @@
+TIC TAC TOE Game
+==================
+Grid dimensions:
+   -Width = 329 pixels
+   -Height = 330 pixels
+
+Grid position (x,y):
+   (201.50, 220.00)
+
+X and O dimensions:
+   -Width = 75 pixels
+   -Height = 75 pixels
+
