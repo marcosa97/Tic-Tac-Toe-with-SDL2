@@ -112,9 +112,6 @@
     <Image Include="images\Game Over.png">
       <Filter>Resource Files</Filter>
     </Image>
-    <Image Include="images\button.png">
-      <Filter>Resource Files</Filter>
-    </Image>
     <Image Include="images\Button spritesheet.png">
       <Filter>Resource Files</Filter>
     </Image>

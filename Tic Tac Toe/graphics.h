@@ -5,7 +5,6 @@
 #include <stdio.h>
 #include "SDL.h"
 #include "SDL_image.h"
-//#include "texture.h"
 
 #define SCREEN_WIDTH 640
 #define SCREEN_HEIGHT 480

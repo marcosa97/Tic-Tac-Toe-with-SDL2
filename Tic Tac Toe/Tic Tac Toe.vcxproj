@@ -151,7 +151,6 @@
   </ItemGroup>
   <ItemGroup>
     <Image Include="images\Button spritesheet.png" />
-    <Image Include="images\button.png" />
     <Image Include="images\Game Over.png" />
     <Image Include="images\intro.png" />
     <Image Include="images\O.png" />
