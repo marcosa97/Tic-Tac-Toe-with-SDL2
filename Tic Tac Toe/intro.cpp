@@ -31,6 +31,11 @@ void Intro::handleEvents(SDL_Event &e) {
 
 void Intro::logic() {
 	//nothing happens. We only display an image in the intro
+
+        //Wait for 2 seconds before showing title screen
+        if ( SDL_GetTicks() >= 2000 ) {
+                requestStateChange(STATE_TITLE);
+        }
 }
 
 void Intro::render(Graphics &graphics) {

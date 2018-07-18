@@ -33,18 +33,18 @@ void Game::gameLoop() {
 	while (currentStateID != STATE_EXIT)
 	{		
 		//Do state event handling
-        currentState->handleEvents(e);
+                currentState->handleEvents(e);
 
-        //Do state logic
-        currentState->logic();
+                //Do state logic
+                currentState->logic();
 
-        //Change state if needed
+                //Change state if needed
 		nextState = currentState->getNextStateID();
 		if(nextState != STATE_NULL)
-            changeState();
+                        changeState();
 
-        //Do state rendering
-        currentState->render(graphics);
+                //Do state rendering
+                currentState->render(graphics);
 		
 		//Update screen
 		draw();
@@ -62,7 +62,7 @@ void Game::changeState() {
 			delete currentState;
 		}
 		switch (nextState) {
-		    case STATE_TITLE:
+		        case STATE_TITLE:
 				currentState = new Title(graphics);
 				break;
 			case STATE_PLAY:

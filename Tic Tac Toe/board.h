@@ -2,7 +2,7 @@
 #ifndef BOARD_H
 #define BOARD_H
 
-#include <utility>
+#include <utility> //Part of the STL
 #include "SDL.h"
 
 #define EMPTY_SPACE '*'

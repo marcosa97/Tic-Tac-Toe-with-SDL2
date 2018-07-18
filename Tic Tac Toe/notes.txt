@@ -11,3 +11,78 @@ X and O dimensions:
    -Width = 75 pixels
    -Height = 75 pixels
 
+
+Dependencies:
+
+main.cpp uses:
+	#include "game.h"
+	#include "gameState.h"
+
+gameState.h uses:
+	#include "SDL.h"
+
+game.h uses:
+	#include "graphics.h"
+	#include "texture.h"
+	#include "gameState.h"
+	#include "intro.h"
+	#include "title.h"
+	#include "play.h"
+	#include "gameOver.h"
+
+graphics.h uses:
+	#include <stdio.h>
+	#include "SDL.h"
+	#include "SDL_image.h"
+
+texture.h uses:
+	#include <stdio.h>
+	#include "SDL.h"
+	#include "SDL_image.h"
+
+intro.h uses:
+	#include "texture.h"
+	#include "gameState.h"
+
+title.h uses:
+	#include "gameState.h"
+	#include "texture.h"
+
+play.h uses:
+	#include "gameState.h"
+	#include "texture.h"
+	#include "board.h"
+	#include "graphics.h" //Needed for declareWinner(graphics)
+	#include "button.h"
+
+board.h uses:
+	#include <utility> //Part of the STL
+	#include "SDL.h"
+
+button.h uses:
+	#include "texture.h"
+	#include "graphics.h" //Needed for render(graphics)
+
+gameOver.h uses:
+	#include "gameState.h"
+	#include "texture.h"
+
+graphics.cpp includes:
+	#include "graphics.h"
+	#include "texture.h"
+
+texture.cpp includes:
+	#include "texture.h"
+	#include "graphics.h"
+
+
+INSTALLING SDL2 AND SDL_image:
+
+# install compiler etc
+sudo apt-get install --yes software-properties-common g++ make
+# install sdl2
+sudo apt-get install --yes libsdl2-dev
+# install opengl
+sudo apt-get install --yes freeglut3-dev
+# install sdl image extension
+sudo apt-get install libsdl2-image-dev
